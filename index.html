@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>BookApp</title>
+  <style>
+    .brand-logo{
+      margin-left: 15px;
+    }
+    #modal1{
+      padding: 10px;
+    }
+    #singleItem{
+      padding: 8vh;
+    }
+    #badge{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      border-radius: 5vh;
+    }
+    .fa-pencil{
+      color: rgb(55, 207, 55);
+    }
+    #edit{
+      margin-left: 20px;
+    }
+    #remove{
+      color: red;
+      margin-left: 15px;
+      padding-top: 2px;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper cyan darken-1">
+      <a href="#" class="brand-logo"><i class="fa fa-book"></i> BookList</a>
+      <ul id="nav-mobile" class="right  hide-on-med-and-down">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li>
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add New Book</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Modal Structure -->
+  
+
+  </nav>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content" >
+      <form>
+        <div class="input-field col s6">
+          <input id="bookname" type="text" class="validate">
+          <label for="bookname">Book Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="author" type="text" class="validate">
+          <label for="author">Author</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="price" type="text" class="validate">
+          <label for="price">Price</label>
+        </div>
+
+          <div class="file-field input-field">
+            <div class="btn orange lighten-2">
+              <span>File</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input id="image" class="file-path validate" type="text">
+            </div>
+          </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="saveBtn" class="modal-close waves-effect waves-green btn-flat">Save</a>
+      <a href="#!" id="cancelBtn" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+  
+
+  
+  <div class="container">
+    <div class="row" id="innerCon">
+      <!-- <div class="col s4">
+        <div class="card card-content center-align">
+          <img src="./src/images/lion.jpg" height="120" width="120"  alt="">
+            <h2>Book Name</h2>
+            <h5>Author</h6>
+            <h6>Price</h6>
+        </div>
+      </div> -->
+      <!-- <div class="col s4">
+        <div class="card card-content center-align">
+          <img src="" height="120" width="120"  alt="">
+            <h2>Book Name</h2>
+            <h5>Author</h6>
+            <h6>Price</h6>
+        </div>
+      </div><div class="col s4">
+        <div class="card card-content center-align">
+          <img src="" height="120" width="120"  alt="">
+            <h2>Book Name</h2>
+            <h5>Author</h6>
+            <h6>Price</h6>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  
+  <!-- Modal Structure -->
+  <div id="modal12" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <form>
+        <div class="input-field col s6">
+          <input id="name2" type="text" class="validate">
+          <label for="bookname">Book Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="author2" type="text" class="validate">
+          <label for="author">Author</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="price2" type="text" class="validate">
+          <label for="price">Price</label>
+        </div>
+
+          <div class="file-field input-field">
+            <div class="btn orange lighten-2">
+              <span>File</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input id="image2" class="file-path validate" type="text">
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="saveBtn2" class="modal-close waves-effect waves-green btn-flat">Save</a>
+      <a href="#!" id="cancelBtn2" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+  <script src="build/app.bundle.js"></script>
+  
+  
+  
+  
+  <script>
+  // with jQuery
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+
+  </script>
+
+</body>
+</html>

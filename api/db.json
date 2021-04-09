@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "The Lion King",
+      "author": "christopher Nolan",
+      "price": "3.4",
+      "image": "./src/images/lion.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Jungle Book",
+      "author": "Robert Downey",
+      "price": "4.4",
+      "image": "./src/images/jungle.jpg"
+    },
+    {
+      "name": "The Black  Widow",
+      "author": "Stan Lee",
+      "price": "4.9",
+      "image": "black widow.jpg",
+      "id": 3
+    },
+    {
+      "name": "The Amazing Spider Man",
+      "author": "Stan Lee",
+      "price": "6.5",
+      "image": "spiderman.jpg",
+      "id": 4
+    }
+  ]
+}
